@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <title> Formulario</title>
-    <link rel="stylesheet" href="Estilos.css">
-   </head>
-<body>
-<h1 class="center">Formulario HTML</h1>
- <form class="center"> 
-   <fieldset>
-     <legend>Datos Personales:</legend>
-     <label for="quantity"><strong>Cédula:</strong></label>
-     <label class="tam" >
-     <br>
-     <input type="quantity" id="ic" name="quantity">
-     <br>
-     <br>
-     <label for="nom"><strong>Nombre:</strong></label>
-     <br>
-     <input type="text" id="nom" name="nom" value=" ">
-     <br>
-     <br>
-     <label for="apel"><strong>Apellido:</strong></label>
-     <br>
-     <input type="text" id="apel" name="apel" value=" ">
-     <br>
-     <br>
-     <label for="email"><strong>Correo electrónico:</strong></label>
-     <br>
-     <input type="email" id="email" name="email">
-     <p><strong>Sexo:</strong></p>
-     <input type="radio" id="femen" name="sexo" value="FEMENINO">
-     <label for="femen">Femenino</label><br>
-     <input type="radio" id="masculi" name="sexo" value="MASCULINO">
-     <label for="masculi">Masculino</label>
-     <br><br> <br>
-     <label for="semestre"><strong>Semestre:</strong></label>
-  <select id="semestre" name="semestre">
-    <option value="1">1ero</option>
-    <option value="2">2do</option>
-    <option value="3">3ro</option>
-    <option value="4">4to</option>
-    <option value="5">5to</option>
-    <option value="6">6to</option>
-    <option value="7">7mo</option>
-    <option value="8">8vo</option>
-    <option value="9">9no</option>
-    <br><br>
-  </select> <br><br><br><br>
-   <input class="letra"type="submit" value="Guardar Registro">
-            &nbsp; &nbsp;
-           <input class="letra" type="reset">
-  </fieldset>
-</form>
 
-</body>
+     <head>
+            <meta charset="UTF-8">
+            <title> Formulario </title>
+            <link rel="stylesheet" href="Estilos.css">
+     </head>
+
+   <body>
+            <h1 class="center"> Formulario HTML</h1>
+            <form class="center" method="post">
+                <fieldset>
+                          <legend>Datos Personales:</legend>
+                          <label for="ic"><strong>Cédula:</strong></label>
+                          <label class="tam" > </label>
+                          <br>
+                          <input type ="text" id="ic" name="ic" required>
+                          <br>
+                          <br>
+                          <label for="nom"><strong>Nombre:</strong></label>
+                          <br>
+                          <input type="text" id="nom" name="nom" required >
+                          <br>
+                          <br>
+                          <label for="apel"><strong>Apellido:</strong></label>
+                          <br>
+                          <input type="text" id="apel" name="apel" required>
+                          <br>
+                          <br>
+                          <label for="email"><strong>Correo electrónico:</strong></label>
+                          <br>
+                          <input type="email" id="email" name="email">
+                          <strong class="letra">Sexo:</strong>
+                          <input type="radio" id="femen" name="sexo" value="FEMENINO">
+                          <label for="femen">Femenino</label><br>
+                          <input type="radio" id="masculi" name="sexo" value="MASCULINO">
+                          <label for="masculi">Masculino</label> <br>
+                          <br>
+                         <label for="semestre"><strong>Semestre:</strong></label> <br>
+                         <select class="letra"  id="semestre" name="semestre">
+                                <option value="1">1ero</option>
+                                <option value="2">2do</option>
+                                <option value="3">3ro</option>
+                                <option value="4">4to</option>
+                                <option value="5">5to</option>
+                                <option value="6">6to</option>
+                                <option value="7">7mo</option>
+                                <option value="8">8vo</option>
+                                <option value="9">9no</option>
+                         </select> <br>
+                         <input class="letra" type="submit" value="Guardar Registro">
+                         &nbsp; &nbsp;
+                         <input class="letra" type="reset">
+                 </fieldeset>
+          </form>
+  </body>
 </html>
